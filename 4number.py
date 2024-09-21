@@ -1,8 +1,14 @@
 #Користувач задає чотиризначне числою Обчисліть суму і добуток 2 середніх чисел
 num = input("Введіть чотиризначне число:")
-mid1 = int(num[1])
-mid2 = int(num[2])
-sum = mid1 + mid2
-dobutok = mid1*mid2
-print("Сума середніх цифр:", sum)
-print("Добуток середніх цифр:", dobutok)
+#перевірка скільки цифр було введено 
+if len(num) == 4 and num.isdigit():
+   mid1 = int(num[1])
+   mid2 = int(num[2])
+
+   sum = mid1 + mid2
+   dobutok = mid1*mid2
+
+   print("Сума середніх цифр:", sum)
+   print("Добуток середніх цифр:", dobutok)
+else:
+   print("Помилка введення.Введіть чотиризначне число")
